@@ -1,0 +1,34 @@
+.nav-balk{
+    flex: auto;   
+}
+.winkelkarretje{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#karretje{
+    width: 32.5px;
+    height: 32.5px;
+    display: flex;
+    justify-content: center;
+}
+.nav-balk{
+    height: 70px;
+    background-color:#FF4DA6 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.nav-balk-items{
+
+    display: flex;
+    justify-content: center;
+    
+}

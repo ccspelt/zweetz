@@ -8,14 +8,17 @@
 </head>
 <script src="script.js"></script>
 <body>
-    <header>
-        <h1>Webshop</h1>
-        <div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Producten</a></li>
-                <li><a href="#">about</a></li>
-            </ul>
+    <header class="nav-balk">
+        <div>a</div>
+        <div class="nav-balk">
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#">Producten</a>
+                <a href="#">about</a>
+            </div>
+            <div class="winkelkarretje">
+                <img id="karretje" src="img/winkelkartje.png">
+            </div>
         </div>
     </header>
 
@@ -40,7 +43,7 @@
             <!-- Winkelwagenitems worden hier weergegeven -->
         </ul>
         <p>Totaal: <span id="totaal-bedrag">0.00</span> EUR</p>
-        <button onclick="">Afrekenen</button>
+        <button href="#">Afrekenen</button>
     </section>
 </body>
 </html>
