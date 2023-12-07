@@ -39,7 +39,27 @@
        alert('Bedankt voor uw aankoop!');
    }
 
-   function winkelwagens(){
+   function winkelwagenmin(){
+    var winkelwagenElement = document.getElementById('winkelwagen');
+
+        // if(){
         document.getElementById('winkelwagen').style.display = 'flex'
-   }
+
+//    }
+//    else{
+
+//    }
+}
+// window.onscroll = function() {scroll()};
+
+// var navbalk = document.getElementsById("navbalk");
+// var sticky = navbalk.offsetTop;
+
+// function scroll() {
+//   if (window.pageYOffset >= sticky) {
+//     navbalk.classList.add("sticky")
+//   } else {
+//     navbalk.classList.remove("sticky");
+//   }
+// }
 

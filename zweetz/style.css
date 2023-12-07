@@ -1,7 +1,7 @@
-.nav-balk{
-    display: flex;
-    justify-content: center;   
+body{
+    margin: 0  ;
 }
+
 .winkelkarretje{
     height: 45px;
     width: 45px;
@@ -18,16 +18,18 @@
     display: flex;
     justify-content: center;
 }
-.nav-balk{
+#navbalk{
     height: 70px;
     background-color:#FF4DA6 ;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     
 }
-.nav-balk-items{
+.navbalk-items{
 
     display: flex;
     justify-content: center;
@@ -37,6 +39,8 @@
     display: none;
     overflow: hidden;
 }
-.producten{
-    
-}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }

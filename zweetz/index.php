@@ -10,7 +10,7 @@
 
 <body>
     <header class="nav">
-        <div class="nav-balk">  
+        <div id="navbalk">  
             <div>a</div>
             <div class="nav-items">
                 <a href="#">Home</a>
@@ -19,7 +19,7 @@
 
             </div>
             <div class="winkelkarretje">
-                <img id="karretje" onclick="winkelwagens()" src="img/winkelkartje.png">
+                <img id="karretje" onclick="winkelwagenmin()" src="img/winkelkartje.png">
             </div>
 
         </div>
@@ -66,6 +66,8 @@
             <p>Prijs: €35.00</p>
             <button onclick="addToCart('Product 6', 35.00)">Voeg toe aan winkelwagen</button>
         </div>
+        
+        
     </div>
 
 
