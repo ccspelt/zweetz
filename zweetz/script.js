@@ -1,5 +1,7 @@
    // Winkelwagenobject om de geselecteerde producten op te slaan
    var winkelwagen = [];
+   var expanded = true;
+   console.log(min)
 
    function addToCart(productNaam, productPrijs) {
        // Voeg het product toe aan de winkelwagen
@@ -40,26 +42,17 @@
    }
 
    function winkelwagenmin(){
-    var winkelwagenElement = document.getElementById('winkelwagen');
 
-        // if(){
-        document.getElementById('winkelwagen').style.display = 'flex'
 
-//    }
-//    else{
+        if(expanded){
+        document.getElementById('winkelwagen').style.display = 'flex';
 
-//    }
+             
+        }
+        else{
+            document.getElementById('winkelwagen').style.display = 'none';
+
+        }
+        expanded = !expanded;
 }
-// window.onscroll = function() {scroll()};
-
-// var navbalk = document.getElementsById("navbalk");
-// var sticky = navbalk.offsetTop;
-
-// function scroll() {
-//   if (window.pageYOffset >= sticky) {
-//     navbalk.classList.add("sticky")
-//   } else {
-//     navbalk.classList.remove("sticky");
-//   }
-// }
 
