@@ -10,8 +10,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
+    margin-top: 8px;
     
 }
+
 #karretje{
     width: 32.5px;
     height: 32.5px;
@@ -34,16 +37,24 @@ body{
 
     display: flex;
     justify-content: center;
-    flex-grow: 2;
+    
+
     
 }
 #winkelwagen {
     display: none;
     overflow: hidden;
-
+    order: 6;
+    margin-right: 2px;
+    margin-top: 3px;
 }
 #alles{
     margin-top: 70px;
     display: flex;
+    justify-content: space-between;
 
+}
+#ont-winkelwagen{
+    order: 6;
+    width: 20%;
 }

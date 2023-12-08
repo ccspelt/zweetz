@@ -11,7 +11,7 @@
 <body>
     <header class="nav">
         <div id="navbalk">  
-            <div>a</div>
+            <p></p>
             <div class="nav-items">
                 <a href="#">Home</a>
                 <a href="#">Producten</a>
@@ -29,6 +29,8 @@
 
     </header>
     <div id="alles">
+        <P></P>
+        <div id="ont-winkelwagen">
         <div id="winkelwagen">
                 <h2>Winkelwagen</h2>
                 <ul id="winkelwagen-lijst">
@@ -38,6 +40,7 @@
                 <button href="#">Afrekenen</button>
                 <script src="script.js"></script>
             </div>
+        </div>
         <div id="producten">
             <!-- Producten worden hier weergegeven -->
             <div class="product">
