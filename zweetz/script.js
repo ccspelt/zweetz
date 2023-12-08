@@ -1,7 +1,6 @@
    // Winkelwagenobject om de geselecteerde producten op te slaan
    var winkelwagen = [];
    var expanded = true;
-   console.log(min)
 
    function addToCart(productNaam, productPrijs) {
        // Voeg het product toe aan de winkelwagen

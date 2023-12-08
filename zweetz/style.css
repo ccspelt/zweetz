@@ -23,24 +23,27 @@ body{
     background-color:#FF4DA6 ;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     overflow: hidden;
     position: fixed;
     top: 0;
+
     
 }
 .navbalk-items{
 
     display: flex;
     justify-content: center;
+    flex-grow: 2;
     
 }
 #winkelwagen {
     display: none;
     overflow: hidden;
+
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+#alles{
+    margin-top: 70px;
+    display: flex;
+
+}
