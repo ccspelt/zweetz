@@ -54,4 +54,29 @@
         }
         expanded = !expanded;
 }
+function showSlide(element, index) {
+    const slider = element.closest('.product').querySelector('.slider');
+    const slides = slider.querySelectorAll('.slide');
+
+    if (index < 0) {
+      index = slides.length - 1;
+    } else if (index >= slides.length) {
+      index = 0;
+    }
+
+    const translateValue = -index * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+  }
+
+  function nextSlide(element) {
+    const slider = element.closest('.product').querySelector('.slider');
+    const currentIndex = Array.from(slider.querySelectorAll('.slide')).findIndex(slide => slide.style.transform === '');
+    showSlide(element, currentIndex + 1);
+  }
+
+  function prevSlide(element) {
+    const slider = element.closest('.product').querySelector('.slider');
+    const currentIndex = Array.from(slider.querySelectorAll('.slide')).findIndex(slide => slide.style.transform === '');
+    showSlide(element, currentIndex - 1);
+  }
 
