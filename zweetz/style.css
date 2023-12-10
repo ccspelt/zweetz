@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: center;
 }
-#navbalk{
+#navBalk{
     height: 70px;
     background-color:#FF4DA6 ;
     width: 100%;
@@ -29,18 +29,12 @@ body{
     justify-content: space-between;
     overflow: hidden;
     position: fixed;
+    /* hier boven staat de informatie om de balk vast te houden aan de boven kant */
     top: 0;
 
     
 }
-.navbalk-items{
 
-    display: flex;
-    justify-content: center;
-    
-
-    
-}
 #winkelwagen {
     display: none;
     overflow: hidden;
@@ -54,7 +48,7 @@ body{
     justify-content: space-between;
 
 }
-#ont-winkelwagen{
+#ontWinkelwagen{
     order: 6;
     width: 20%;
 }
@@ -63,7 +57,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 200px;
   }
+#producten{
+  display: flex;
+  width:  300px;
+}
 
   .slider {
     display: flex;
@@ -93,7 +92,7 @@ body{
     height: 20px;
   }
 
-  .slider-container {
+  .sliderContainer {
     width: 300px;
     overflow: hidden;
   }

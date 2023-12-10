@@ -10,9 +10,9 @@
 
 <body>
     <header class="nav">
-        <div id="navbalk">  
+        <div id="navBalk">  
             <p></p>
-            <div class="nav-items">
+            <div class="navItems">
                 <a href="#">Home</a>
                 <a href="#">Producten</a>
                 <a href="#">about</a>
@@ -20,7 +20,8 @@
             </div>
             <div> 
             <div class="winkelkarretje">
-                <img id="karretje" onclick="winkelwagenmin()" src="img/winkelkartje.png">
+                <img id="karretje" onclick="winkelwagenMin()" src="img/winkelkartje.png">
+                <!-- winkelwagen knop en plaatje. -->
             
             </div>
             
@@ -30,38 +31,42 @@
     </header>
     <div id="alles">
         <P></P>
-        <div id="ont-winkelwagen">
+        <div id="ontWinkelwagen">
         <div id="winkelwagen">
                 <h2>Winkelwagen</h2>
-                <ul id="winkelwagen-lijst">
-                <!-- Winkelwagenitems worden hier weergegeven -->
+                <ul id="winkelwagenLijst">
+
                 </ul>
-                <p>Totaal: <span id="totaal-bedrag">0.00</span> </p>
+                <p>Totaal: <span id="totaalBedrag">0.00</span> </p>
                 <button href="#">Afrekenen</button>
                 <script src="script.js"></script>
             </div>
         </div>
         <div id="producten">
-            <!-- Producten worden hier weergegeven -->
+        <!-- Producten worden hier weergegeven bij elk loopt class"product" werkt het zelfde-->
             
     <div class="product">
         <h3>Product 1</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
+                <!-- hier onder staan de fotos moet veranderen naar de fotos die nodig zijn voor de producten -->
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/Naamloos.jpg"></div>
             </div>
 
+
                 <p>Prijs: €10.00</p>
+                <!-- hier onder moet je de "product 1" veranderen naaer het product naam en "10.00" naar de prijs die nodig is  -->
                 <button onclick="addToCart('Product 1', 10.00)">Voeg toe aan winkelwagen</button>
                 <button class="Btn" onclick="prevSlide(this)">❮</button>
                 <button class="Btn" onclick="nextSlide(this)">❯</button>
+                <!-- hier boven staan de knopen om de foto's kunnen verandren -->
             </div>
             
             <div class="product">
         <h3>Product 2</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -76,7 +81,7 @@
             
             <div class="product">
         <h3>Product 3</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -91,7 +96,7 @@
             
             <div class="product">
         <h3>Product 4</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -106,7 +111,7 @@
             
             <div class="product">
         <h3>Product 5</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -121,7 +126,7 @@
 
             <div class="product">
         <h3>Product 6</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -136,7 +141,7 @@
             
             <div class="product">
         <h3>Product 7</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>
@@ -151,7 +156,7 @@
             
             <div class="product">
         <h3>Product 8</h3>      
-            <div class="slider-container">
+            <div class="sliderContainer">
                 <div class="slider">
                 <div class="slide"><img class="img_pro" src="img/ik.jpg" ></div>
                 <div class="slide"><img class="img_pro" src="img/koe.jpg" ></div>

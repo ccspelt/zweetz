@@ -1,24 +1,23 @@
-   // Winkelwagenobject om de geselecteerde producten op te slaan
    var winkelwagen = [];
    var expanded = true;
 
    function addToCart(productNaam, productPrijs) {
-       // Voeg het product toe aan de winkelwagen
+       // Voegt de producten toe aan de winkelwagen
        winkelwagen.push({
            naam: productNaam,
            prijs: productPrijs
        });
 
-       // Werk de winkelwagenweergave bij
+
        updateCartView();
    }
 
 
    function updateCartView() {
-       var winkelwagenLijst = document.getElementById('winkelwagen-lijst');
-       var totaalBedragElement = document.getElementById('totaal-bedrag');
+       var winkelwagenLijst = document.getElementById('winkelwagenLijst');
+       var totaalBedragElement = document.getElementById('totaalBedrag');
        
-       // Wis de huidige weergave
+       // niet wissen anders voegt hij het dubble toe aan de lijst
        winkelwagenLijst.innerHTML = '';
 
        // Vul de weergave opnieuw in met de bijgewerkte gegevens
@@ -31,16 +30,12 @@
            totaalBedrag += item.prijs;
        });
 
-       // Werk het totaalbedrag bij
+       // simple reken som voor het winkel wagen bedrag
        totaalBedragElement.textContent = totaalBedrag.toFixed(2) + ' EUR';
    }
 
-   function checkout() {
-       // Plaats hier de code voor het afrekenen (bijvoorbeeld doorgeven aan een backend, verwerken van betalingen, etc.)
-       alert('Bedankt voor uw aankoop!');
-   }
-
-   function winkelwagenmin(){
+// winkelwagen voor minialiseren en verkleinen
+   function winkelwagenMin(){
 
 
         if(expanded){
@@ -54,6 +49,8 @@
         }
         expanded = !expanded;
 }
+
+// functie voor de als net op de website kom
 function showSlide(element, index) {
     const slider = element.closest('.product').querySelector('.slider');
     const slides = slider.querySelectorAll('.slide');
@@ -68,12 +65,13 @@ function showSlide(element, index) {
     slider.style.transform = 'translateX(' + translateValue + ')';
   }
 
+  // als ik naar de volgen foto wil gaan
   function nextSlide(element) {
     const slider = element.closest('.product').querySelector('.slider');
     const currentIndex = Array.from(slider.querySelectorAll('.slide')).findIndex(slide => slide.style.transform === '');
     showSlide(element, currentIndex + 1);
   }
-
+// als ik naar de vorige foto wil gaan
   function prevSlide(element) {
     const slider = element.closest('.product').querySelector('.slider');
     const currentIndex = Array.from(slider.querySelectorAll('.slide')).findIndex(slide => slide.style.transform === '');
